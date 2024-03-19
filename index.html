@@ -1,40 +1,60 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuenasMozas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>BuenasMozas</h1>
+    <header class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h1 class="mb-0">BuenasMozas</h1>
+        </div>
     </header>
 
-    <section id="formulario">
-        <h2>Seleccione el tipo de evento y la cantidad de mozas que necesita:</h2>
-        <form id="formEvento">
-            <label for="tipoEvento">Tipo de Evento:</label>
-            <select id="tipoEvento" name="tipoEvento">
-                <option value="boda">Boda</option>
-                <option value="fiesta">Fiesta</option>
-                <option value="evento_corporativo">Evento Corporativo</option>
-                <!-- Agrega más opciones de eventos según sea necesario -->
-            </select><br><br>
-            <label for="cantidadMozas">Cantidad de Mozas:</label>
-            <input type="number" id="cantidadMozas" name="cantidadMozas" min="1" required><br><br>
-            <button type="submit">Buscar Mozas</button>
-        </form>
+    <section id="formulario" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Seleccione el tipo de evento y la cantidad de mozas que necesita:</h2>
+            <form id="formEvento" class="bg-white p-4 rounded shadow-sm">
+                <div class="form-group">
+                    <label for="tipoEvento">Tipo de Evento:</label>
+                    <select id="tipoEvento" name="tipoEvento" class="form-control">
+                        <option value="matri">Matrimonio</option>
+                        <option value="fiesta">Fiesta</option>
+                        <option value="evento_corporativo">Evento Corporativo</option>
+                        <option value="cumple">Cumpleaños</option>
+
+                        <!-- Agrega más opciones de eventos según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cantidadMozas">Cantidad de Mozas:</label>
+                    <input type="number" id="cantidadMozas" name="cantidadMozas" min="1" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-pink btn-block">Buscar Mozas</button>
+            </form>
+        </div>
     </section>
 
-    <section id="mozas">
-        <!-- Aquí se mostrarán las mozas disponibles -->
+    <section id="mozas" class="py-5">
+        <div class="container">
+            <div class="row" id="mozasRow"></div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 BuenasMozas</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 BuenasMozas</p>
+        </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
