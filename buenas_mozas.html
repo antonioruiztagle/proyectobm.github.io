@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuenasMozas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BuenasMozas</h1>
+    </header>
+
+    <section id="formulario">
+        <h2>Seleccione el tipo de evento y la cantidad de mozas que necesita:</h2>
+        <form id="formEvento">
+            <label for="tipoEvento">Tipo de Evento:</label>
+            <select id="tipoEvento" name="tipoEvento">
+                <option value="boda">Boda</option>
+                <option value="fiesta">Fiesta</option>
+                <option value="evento_corporativo">Evento Corporativo</option>
+                <option value="cumpleaños">Cumpleaños</option>
+                <!-- Agrega más opciones de eventos según sea necesario -->
+            </select><br><br>
+            <label for="cantidadMozas">Cantidad de Mozas:</label>
+            <input type="number" id="cantidadMozas" name="cantidadMozas" min="1" required><br><br>
+            <button type="submit">Buscar Mozas</button>
+        </form>
+    </section>
+
+    <section id="mozas">
+        <!-- Aquí se mostrarán las mozas disponibles -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BuenasMozas</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

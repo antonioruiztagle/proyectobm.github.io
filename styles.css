@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Blanco suave */
+    color: #333; /* Texto negro */
+}
+
+header {
+    background-color: #000; /* Negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff69b4; /* Rosado */
+}
+
+section {
+    padding: 20px;
+}
+
+form {
+    background-color: #fff; /* Blanco */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button {
+    background-color: #ff69b4; /* Rosado */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff1493; /* Rosa más intenso */
+}
+
+.moza img {
+    width: 150px; /* Ancho de imagen */
+    height: 200px; /* Altura de imagen */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000; /* Negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
