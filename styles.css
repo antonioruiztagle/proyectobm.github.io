@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; /* Cambiada la fuente a Roboto para una apariencia más elegante */
     margin: 0;
     padding: 0;
     background-color: #f8f8f8; /* Blanco suave */
@@ -16,6 +16,10 @@ header {
 
 h1 {
     margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    font-weight: 700; /* Negrita para mayor énfasis */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
 }
 
 nav ul {
@@ -31,6 +35,7 @@ nav ul li {
 nav ul li a {
     color: #fff; /* Texto blanco */
     text-decoration: none;
+    font-size: 1.2em; /* Tamaño de fuente un poco más grande */
 }
 
 nav ul li a:hover {
@@ -51,10 +56,11 @@ form {
 button {
     background-color: #ff69b4; /* Rosado */
     color: #fff; /* Texto blanco */
-    padding: 10px 20px;
+    padding: 15px 25px; /* Aumento del espacio alrededor del botón */
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1.2em; /* Tamaño de fuente un poco más grande */
 }
 
 button:hover {
@@ -73,4 +79,5 @@ footer {
     color: #fff; /* Texto blanco */
     padding: 20px;
     text-align: center;
+    font-size: 1.2em; /* Tamaño de fuente un poco más grande */
 }
